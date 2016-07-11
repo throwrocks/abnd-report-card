@@ -4,7 +4,7 @@ This project is part of the Udacity Android Basics Nanodegree. You can red the p
 
 ### ReportCard.java
 
-This custom class provides a constructor to create a report card object by passing a student's id. Then, the grades for each course can be entered using the various public Setters. To retrieve the report card data, the class provides one public method `toString()` that returns the data in valid JSON format.
+This custom class provides a constructor to create a report card object by passing a student's id and optionally, the grades for all the courses.The grades for each course can also be modified using the various public Setters. To retrieve the report card data, the class provides one public method `toString()` that returns the data in valid JSON format.
 
 ### Example output
 
