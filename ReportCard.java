@@ -19,8 +19,38 @@ class ReportCard {
     private int artGrade;
 
     /**
-     * Report Card Constructor
-     * Creates a report card object by passing the student id and the grades for each class
+     * ReportCard Constructor
+     * Use this constructor to create a Report Card with all the grades
+     *
+     * @param studentId    the student id to whom the report card belongs
+     * @param mathGrade    the grade for the match course
+     * @param englishGrade the grade for the english course
+     * @param spanishGrade the grade for the spanish course
+     * @param historyGrade the grade for the history course
+     * @param physicsGrade the grade for the physics course
+     * @param biologyGrade the grade for the biology course
+     * @param gymGrade     the grade for the gym course
+     * @param artGrade     the grade for the art course
+     */
+    public ReportCard(int studentId, int mathGrade, int englishGrade,
+                      int spanishGrade, int historyGrade, int physicsGrade,
+                      int biologyGrade, int gymGrade, int artGrade) {
+        this.schoolYear = "2016-17";
+        this.semesterdId = "Fall";
+        this.studentId = studentId;
+        this.mathGrade = mathGrade;
+        this.englishGrade = englishGrade;
+        this.spanishGrade = spanishGrade;
+        this.historyGrade = historyGrade;
+        this.physicsGrade = physicsGrade;
+        this.biologyGrade = biologyGrade;
+        this.gymGrade = gymGrade;
+        this.artGrade = artGrade;
+    }
+
+    /**
+     * ReportCard Constructor
+     * Use this constructor to create a Report Card and set the grades later
      *
      * @param studentId the student's id to whom the report card belongs
      */
@@ -33,6 +63,7 @@ class ReportCard {
     /**
      * toString
      * A public method to get the report card's information
+     *
      * @return a JSON string containing all the report card data
      */
     @Override
@@ -106,6 +137,7 @@ class ReportCard {
      * convertGrade
      * Converts a grade number in the range of 0 to 100 into a letter
      * based on a standard grading system
+     *
      * @param grade the grade in number format
      * @return the grade in letter format
      */
